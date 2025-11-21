@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Code By SNIPA VN"
+echo "emperorx"
 # Tải package bổ sung vào để tải:)))
 apt-get update && apt-get install -y --no-install-recommends \
     qemu-system-x86 \
@@ -26,12 +26,12 @@ curl -L https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd6
 -o /opt/qemu/ubuntu.img
 
 # Viết host
-echo "instance-id: servertipacvn\nlocal-hostname: servertipacvn" > /cloud-init/meta-data
+echo "instance-id: emperorx\nlocal-hostname: emperorx" > /cloud-init/meta-data
 
 # Chỉnh sửa config image ubuntu
 printf "#cloud-config\n\
 preserve_hostname: false\n\
-hostname: servertipacvn\n\
+hostname: emperorx\n\
 users:\n\
   - name: root\n\
     gecos: root\n\
