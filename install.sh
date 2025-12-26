@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "emperorx"
+echo "dray"
 # Tải package bổ sung vào để tải:)))
 apt-get update && apt-get install -y --no-install-recommends \
     qemu-system-x86 \
@@ -26,12 +26,12 @@ curl -L https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd6
 -o /opt/qemu/ubuntu.img
 
 # Viết host
-echo "instance-id: emperorx\nlocal-hostname: emperorx" > /cloud-init/meta-data
+echo "instance-id: dray\nlocal-hostname: dray" > /cloud-init/meta-data
 
 # Chỉnh sửa config image ubuntu
 printf "#cloud-config\n\
 preserve_hostname: false\n\
-hostname: emperorx\n\
+hostname: dray\n\
 users:\n\
   - name: root\n\
     gecos: root\n\
